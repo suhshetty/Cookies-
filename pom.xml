@@ -1,53 +1,45 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" 
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>Group1</groupId>
   <artifactId>Artifact1</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
   <dependencies>
-    <!-- Selenium Dependency -->
-    <dependency>
-      <groupId>org.seleniumhq.selenium</groupId>
-      <artifactId>selenium-java</artifactId>
-      <version>4.27.0</version>
-    </dependency>
+  
+    <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>4.27.0</version>
+</dependency>
 
-    <!-- Resilience4j Dependency -->
-    <dependency>
-      <groupId>io.github.resilience4j</groupId>
-      <artifactId>resilience4j-retry</artifactId>
-      <version>2.2.0</version>
-    </dependency>
+<!-- https://mvnrepository.com/artifact/io.github.resilience4j/resilience4j-retry -->
+<dependency>
+    <groupId>io.github.resilience4j</groupId>
+    <artifactId>resilience4j-retry</artifactId>
+    <version>2.2.0</version>
+</dependency>
 
-    <!-- Failsafe Dependency -->
-    <dependency>
-      <groupId>dev.failsafe</groupId>
-      <artifactId>failsafe</artifactId>
-      <version>3.3.2</version>
-    </dependency>
+<!-- https://mvnrepository.com/artifact/dev.failsafe/failsafe -->
+<dependency>
+    <groupId>dev.failsafe</groupId>
+    <artifactId>failsafe</artifactId>
+    <version>3.3.2</version>
+</dependency>
+
+  
   </dependencies>
+  
+  
   
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
-      <!-- Maven Compiler Plugin -->
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.13.0</version>
         <configuration>
           <release>21</release>
-        </configuration>
-      </plugin>
-
-      <!-- Maven Exec Plugin -->
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>exec-maven-plugin</artifactId>
-        <version>3.1.0</version>
-        <configuration>
-          <mainClass>Class1</mainClass>
         </configuration>
       </plugin>
     </plugins>

@@ -54,12 +54,7 @@ public class Class1 {
         }
     }
  
-    /**
-     * Saves cookies to a JSON file.
-     *
-     * @param cookies the set of cookies to save
-     * @param filePath the path to save the JSON file
-     */
+
     private static void saveCookiesToFile(Set<Cookie> cookies, String filePath) {
         try (FileWriter fileWriter = new FileWriter(filePath)) {
             fileWriter.write("[");
@@ -88,11 +83,7 @@ public class Class1 {
         }
     }
  
-    /**
-     * Automates the process of committing and pushing changes to Git.
-     *
-     * @param filePath the path to the file that was updated
-     */
+   
     private static void commitAndPushToGit(String filePath) {
         try {
             // Repository directory path (Ensure this points to the correct repo path)
